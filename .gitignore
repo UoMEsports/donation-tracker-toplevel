@@ -19,6 +19,7 @@ eggs/
 lib/
 lib64/
 parts/
+Scripts/
 sdist/
 share/
 var/
