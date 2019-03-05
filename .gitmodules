@@ -1,6 +1,6 @@
 [submodule "tracker_ui"]
     path = tracker_ui
-    url = https://github.com/PowerUpWithPride/donation-tracker-ui.git
+	url = https://github.com/UoMEsports/donation-tracker-ui.git
 [submodule "tracker"]
     path = tracker
-    url = https://github.com/PowerUpWithPride/donation-tracker.git
+	url = https://github.com/UoMEsports/donation-tracker.git

@@ -105,3 +105,4 @@ ENV/
 db.sqlite*
 local.py
 /static
+/db
