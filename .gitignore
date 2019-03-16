@@ -106,7 +106,7 @@ pyvenv.cfg
 
 # Project-specific excludes
 .idea
-db.sqlite*
+*.sqlite*
 local.py
 /static
 /db

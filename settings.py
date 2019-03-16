@@ -225,11 +225,11 @@ LOGGING = {
             'filters': ['require_debug_true'],
             'class': 'logging.StreamHandler',
         },
-#        'file': {
-#            'level': 'ERROR',
-#            'class': 'logging.FileHandler',
-#            'filename': '/var/log/uwsgi/django-error.log',
-#        },
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': 'out.log',
+        },
     },
     'loggers': {
         'django.request': {
@@ -239,7 +239,7 @@ LOGGING = {
         },
         'django.db.backends': {
             'level': 'DEBUG',
-            'handlers': ['console'],
+            'handlers': ['console', 'file'],
         },
     }
 }
