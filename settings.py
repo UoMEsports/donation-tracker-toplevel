@@ -221,15 +221,9 @@ LOGGING = {
             'class': 'django.utils.log.AdminEmailHandler'
         },
         'console': {
-            'level': 'DEBUG',
-            'filters': ['require_debug_true'],
+            'filters': ['require_debug_false'],
             'class': 'logging.StreamHandler',
         },
-#        'file': {
-#            'level': 'ERROR',
-#            'class': 'logging.FileHandler',
-#            'filename': '/var/log/uwsgi/django-error.log',
-#        },
     },
     'loggers': {
         'django.request': {
@@ -237,8 +231,9 @@ LOGGING = {
             'level': 'ERROR',
             'propagate': True,
         },
-        'django.db.backends': {
-            'level': 'DEBUG',
+        # Log anything warning or higher in production to stdout/stderr for capture.
+        '': {
+            'level': 'WARNING',
             'handlers': ['console'],
         },
     }
