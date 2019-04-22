@@ -198,6 +198,9 @@ if local.HAS_GIANTBOMB_API_KEY:
 # Flag for new donate page layout.
 USE_NEW_DONATE_LAYOUT = local.USE_NEW_DONATE_LAYOUT
 
+# Tiltify access token
+TILTIFY_ACCESS_TOKEN = getattr(local, 'TILTIFY_ACCESS_TOKEN', '')
+
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
