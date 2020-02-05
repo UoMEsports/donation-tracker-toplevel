@@ -16,6 +16,7 @@ dist/
 downloads/
 eggs/
 .eggs/
+Lib/
 lib/
 lib64/
 parts/
