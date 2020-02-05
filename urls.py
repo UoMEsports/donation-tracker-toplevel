@@ -15,11 +15,3 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('logout', tracker.views.logout),
 ]
-
-try:
-    import importlib
-
-    importlib.import_module('tracker_ui')
-    urlpatterns.append(path('ui', include('tracker_ui.urls')), )
-except ModuleNotFoundError:
-    print("Could not locate tracker_ui module, starting without it")

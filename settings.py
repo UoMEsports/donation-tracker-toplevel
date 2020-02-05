@@ -155,7 +155,6 @@ INSTALLED_APPS = (
     'post_office',
     'paypal.standard.ipn',
     'tracker',
-    'tracker_ui',
     'timezone_field',
     'ajax_select',
     'mptt',

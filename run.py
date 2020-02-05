@@ -13,7 +13,6 @@ if cwd[1] == ':':
 subprocess.check_call(['docker', 'build', '-t', 'donation-tracker', '.'])
 container = subprocess.check_output(['docker', 'run', '-d',
                                      '-v', cwd + '/tracker:/usr/src/app/tracker:ro',
-                                     '-v', cwd + '/tracker_ui/static:/usr/src/app/tracker_ui/static:ro',
                                      '-p', '8080:8080',
                                      'donation-tracker'])
 subprocess.check_call(['docker', 'exec', '-d', container.strip(), 'python', 'webpack-dev-server.py'])
