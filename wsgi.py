@@ -5,7 +5,7 @@ import inspect
 
 # I put it ahead so that it will take the local paypal app over the global one
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
-os.environ.setdefault("LC_ALL", "en_US.utf8")
+os.environ.setdefault("LC_ALL", "en_GB.utf8")
 
 # This application object is used by any WSGI server configured to use this
 # file. This includes Django's development server, if the WSGI_APPLICATION
